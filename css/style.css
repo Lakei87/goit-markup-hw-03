@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -8,13 +18,32 @@
 }
 
 body {
+  margin: 0;
   color: var(--primary-text-color);
   background-color: var(--primery-white-color);
   font-family: roboto, sans-serif;
 }
 
+/* Контейнер */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+/* Общие стили для кнопок */
+.button {
+  border: 1px solid transparent;
+  margin: 0;
+  padding: 0;
+}
+
 /* Убираем стили у списков и ссылок */
 .list {
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
 }
@@ -45,6 +74,10 @@ body {
 /*---------Шапка страницы--------*/
 .header {
   background-color: var(--secondary-white-color);
+}
+
+.header .container {
+  outline: 1px solid tomato;
 }
 
 /* logo */
@@ -78,7 +111,14 @@ body {
   background-color: var(--primery-black-color);
 }
 
+.hero-container {
+  text-align: center;
+  outline: 1px solid teal;
+}
+
 .hero-title {
+  margin: 0 0 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,19 +128,31 @@ body {
 }
 
 .hero-button {
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+
   font-family: roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.75;
+
   color: var(--secondary-white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
   cursor: pointer;
 }
 
 /* Преимущества компании */
+.advant .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid black;
+}
+
 .advant-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -109,6 +161,8 @@ body {
 }
 
 .advant-text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -116,7 +170,14 @@ body {
 }
 
 /* Чем мы занимаемся */
+.directions .container {
+  outline: 1px solid blue;
+}
+
 .directions-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
