@@ -186,6 +186,18 @@ body {
   outline: 1px solid black;
 }
 
+.advant .list {
+  display: flex;
+}
+
+.advant .item {
+  width: 270px;
+}
+
+.advant .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advant-title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -223,6 +235,15 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03;
+  text-align: center;
+}
+
+.directions .list {
+  display: flex;
+}
+
+.directions .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Наша команда */
@@ -242,6 +263,11 @@ body {
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03;
+  text-align: center;
+}
+
+.our-team .list {
+  display: flex;
 }
 
 .our-team .item {
@@ -250,6 +276,10 @@ body {
 
   text-align: center;
   background-color: var(--secondary-white-color);
+}
+
+.our-team .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .our-team .item-img {
