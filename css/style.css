@@ -90,7 +90,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  outline: 1px solid tomato;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -152,7 +152,6 @@ body {
 
 .hero-container {
   text-align: center;
-  outline: 1px solid teal;
 }
 
 .hero-title {
@@ -182,10 +181,6 @@ body {
 }
 
 /* Преимущества компании */
-.advant .container {
-  outline: 1px solid black;
-}
-
 .advant .list {
   display: flex;
 }
@@ -221,10 +216,6 @@ body {
 /* Чем мы занимаемся */
 .directions.section {
   padding-top: 0;
-}
-
-.directions .container {
-  outline: 1px solid blue;
 }
 
 .directions-title {
@@ -361,23 +352,51 @@ body {
 
 /*--------------------Стили для страницы Портфолио---------------- */
 /* Навигация продуктов */
-.products .button {
+.products .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.products-title {
+  margin: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.nav-item .button {
+  padding: 6px 22px;
+
   font-family: roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.products .button:hover,
-.products .button:focus {
+.nav-item .button:hover,
+.nav-item .button:focus {
   color: var(--secondary-white-color);
   background-color: var(--accent-color);
 }
 
 /* Продукты компании */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .products .item {
   width: 370px;
   height: 404px;
