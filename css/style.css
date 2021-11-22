@@ -384,13 +384,14 @@ body {
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);б
+  color: var(--primary-text-color);
 
   background-color: #f5f4fa;
   border-radius: 4px;
 
   cursor: pointer;
 }
+
 .nav-item .button:hover,
 .nav-item .button:focus {
   color: var(--secondary-white-color);
@@ -438,7 +439,7 @@ body {
 
 .img-description .text {
   margin: 0;
-  
+
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
