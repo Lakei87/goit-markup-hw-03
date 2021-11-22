@@ -12,7 +12,7 @@ html {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --primery-white-color: #e5e5e5;
+  /* --primery-white-color: #e5e5e5; */
   --secondary-white-color: #fff;
   --primery-black-color: #2f303a;
 }
@@ -21,7 +21,8 @@ body {
   margin: 0;
   font-family: roboto, sans-serif;
   color: var(--primary-text-color);
-  background-color: var(--primery-white-color);
+  /* background-color: var(--primery-white-color); */
+  background-color: var(--secondary-white-color);
 }
 
 /* Секция */
@@ -149,6 +150,8 @@ body {
 /* ----Уникальный контент стрыницы---- */
 /* Наш герой */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--primery-black-color);
 }
 
@@ -303,12 +306,10 @@ body {
 
 /*-------Подвал страницы-------*/
 .footer {
-  background-color: var(--primery-black-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--primery-black-color);
 }
 
 /* logo */
